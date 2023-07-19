@@ -38,7 +38,7 @@ export default function Home() {
       <footer className="mt-auto mb-1 w-full text-center">
         <Separator />
         <strong className="text-white">
-          פותח ע"י{" "}
+          פותח על ידי{" "}
           <a href="https://www.linkedin.com/in/daniel-hasdiel-3933b21a4/">
             דניאל חסדיאל
           </a>
