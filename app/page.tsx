@@ -1,42 +1,19 @@
-"use client"; // This is a client component 👈🏽
-import { Button } from "@/components/ui/button";
+import Confirm from "@/components/Confirm";
 import { Separator } from "@/components/ui/separator";
-import Image from "next/image";
-import { useState } from "react";
 
 export default function Home() {
-  const [open, setOpen] = useState(false);
   return (
     <main className="flex min-h-screen bg-gold flex-col items-center">
-      <div className="px-12 py-2">
+      <div className="px-12 py-8">
         <video
           className="xl:h-[30rem] rounded-xl shadow-2xl"
-          src="/invitation_video.mp4"
+          src="/invitation_video.mp4#t=0.001"
           typeof="mp4"
           controls
           playsInline
         ></video>
       </div>
-      <div>
-        {open ? (
-          <iframe
-            className="bg-white rounded-xl mb-2 shadow-2xl"
-            src="https://docs.google.com/forms/d/e/1FAIpQLSddgpAgyeRSpsgkV66BjdO8WPVqioB1-0A4U83zfKuIez5mNg/viewform?embedded=true"
-            width="350"
-            height="1700"
-          >
-            בטעינה…
-          </iframe>
-        ) : (
-          <Button
-            className="text-gold bg-white shadow text-lg mb-2 hover:scale-110"
-            size={"lg"}
-            onClick={() => setOpen(true)}
-          >
-            לאישור הגעה לחץ כאן
-          </Button>
-        )}
-      </div>
+      <Confirm />
       <footer className="mt-auto mb-1 w-full text-center">
         <Separator />
         <strong className="text-white">
