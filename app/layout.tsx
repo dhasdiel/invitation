@@ -1,7 +1,6 @@
 import "./globals.css";
-import { Inter, Varela_Round } from "next/font/google";
+import { Varela_Round } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
 const varelaRound = Varela_Round({
   subsets: ["hebrew", "latin"],
   weight: "400",
