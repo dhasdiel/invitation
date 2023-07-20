@@ -1,21 +1,25 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
+import "./globals.css";
+import { Inter, Varela_Round } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
+const varelaRound = Varela_Round({
+  subsets: ["hebrew", "latin"],
+  weight: "400",
+});
 
 export const metadata = {
-  title: 'Daniel & Ella',
-  description: 'Daniel & Ella invitation website',
-}
+  title: "Daniel & Ella",
+  description: "Daniel & Ella invitation website",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={varelaRound.className}>{children}</body>
     </html>
-  )
+  );
 }

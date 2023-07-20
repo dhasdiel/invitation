@@ -1,0 +1,40 @@
+"use client"; // This is a client component 👈🏽
+import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+
+const InvitationMedia = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [showImage, setShowImage] = useState(false);
+
+  useEffect(() => {
+    if (!videoRef.current) return;
+    videoRef.current.onended = function () {
+      setShowImage(true);
+    };
+  }, []);
+
+  return (
+    <div>
+      {!showImage ? (
+        <video
+          ref={videoRef}
+          className="xl:h-[30rem] rounded-xl shadow-2xl"
+          src="/invitation_video.mp4#t=0.001"
+          typeof="mp4"
+          controls
+          playsInline
+        ></video>
+      ) : (
+        <Image
+          className="rounded-xl shadow-2xl"
+          src="/invitation_image.jpeg"
+          alt={"invitation image"}
+          width="300"
+          height="600"
+        />
+      )}
+    </div>
+  );
+};
+
+export default InvitationMedia;
