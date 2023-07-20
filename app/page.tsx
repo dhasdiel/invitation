@@ -1,28 +1,38 @@
-import Confirm from "@/components/Confirm";
-import { Separator } from "@/components/ui/separator";
+import Credit from "@/components/Credit";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen bg-gold flex-col items-center">
-      <div className="px-12 py-8">
-        <video
-          className="xl:h-[30rem] rounded-xl shadow-2xl"
-          src="/invitation_video.mp4#t=0.001"
-          typeof="mp4"
-          controls
-          playsInline
-        ></video>
+      <div className="bg-white rounded-full mt-4">
+        <Image src="/logo.png" alt={""} width="50" height="50" />
       </div>
-      <Confirm />
-      <footer className="mt-auto mb-1 w-full text-center">
-        <Separator />
-        <strong className="text-white">
-          פותח על ידי{" "}
-          <a href="https://www.linkedin.com/in/daniel-hasdiel-3933b21a4/">
-            דניאל חסדיאל
-          </a>
-        </strong>
-      </footer>
+      <Card dir="rtl" className="w-[350px] mt-4 shadow-2xl">
+        <CardHeader className="text-center">
+          <CardTitle className="text-gold">דניאל & אלה</CardTitle>
+          <CardDescription>ברוך הבא לפורטל ההזמנות </CardDescription>
+        </CardHeader>
+        <CardContent className="text-center">מאיזה צד אתה?</CardContent>
+        <CardFooter className="flex justify-between">
+          <Button className="hover:bg-white hover:text-black hover:scale-110 outline outline-1 outline-white hover:outline-black">
+            <Link href="/bride"> צד כלה 👰</Link>
+          </Button>
+          <Button className="bg-white text-black hover:text-white hover:scale-110 outline outline-1 outline-black hover:outline-white">
+            <Link href="/groom"> צד חתן 🤵</Link>
+          </Button>
+        </CardFooter>
+      </Card>
+      <Credit />
     </main>
   );
 }
