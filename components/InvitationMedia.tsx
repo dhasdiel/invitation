@@ -19,7 +19,7 @@ const InvitationMedia = () => {
         <video
           ref={videoRef}
           className="xl:h-[30rem] rounded-xl shadow-2xl"
-          src="/invitation_video.mp4#t=0.001"
+          src="/invitation_short_video.mp4#t=0.001"
           typeof="mp4"
           controls
           playsInline
