@@ -8,7 +8,7 @@ const ToolsButtons = () => {
       <Button>
         <a
           target="_blank"
-          href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=M2wwamtwNmhkZHR2cjhzMm5iMmh2cTVwcGogeWFlbGgyMDEwQG0&amp;tmsrc=yaelh2010%40gmail.com"
+          href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=M2wwamtwNmhkZHR2cjhzMm5iMmh2cTVwcGogYzQ2MGE2OWRlMjI2MmFiNGRiOWE4N2E3ZDQyNTkxZjdhMTcxOWUyMGIwNjE0YzY3ZTRlODkwZGViY2NjNjQ3OUBn&tmsrc=c460a69de2262ab4db9a87a7d42591f7a1719e20b0614c67e4e890debccc6479%40group.calendar.google.com"
         >
           <BsFillCalendarCheckFill />
         </a>
