@@ -1,6 +1,7 @@
 import ConfirmForm from "@/components/ConfirmForm";
 import Credit from "@/components/Credit";
 import InvitationMedia from "@/components/InvitationMedia";
+import ToolsButtons from "@/components/ToolsButtons";
 
 const page = () => {
   return (
@@ -9,6 +10,7 @@ const page = () => {
         <InvitationMedia />
       </div>
       <ConfirmForm />
+      <ToolsButtons />
       <Credit />
     </div>
   );
