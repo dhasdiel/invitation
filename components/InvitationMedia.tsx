@@ -28,11 +28,11 @@ const InvitationMedia = () => {
         ></video>
       ) : (
         <Image
-          className="rounded-xl shadow-2xl w-[400px] h-[600px]"
+          className="rounded-xl shadow-2xl w-[400px] h-[500px]"
           src="/invitation_sharon.jpeg"
           alt={"invitation image"}
           width={400}
-          height={800}
+          height={700}
         />
       )}
     </div>
