@@ -31,8 +31,8 @@ const InvitationMedia = () => {
           className="rounded-xl shadow-2xl"
           src="/invitation_sharon.jpeg"
           alt={"invitation image"}
-          width="300"
-          height="600"
+          width="400"
+          height="800"
         />
       )}
     </div>

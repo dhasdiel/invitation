@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen bg-gold flex-col items-center">
+    <main className="relative flex min-h-screen bg-gold flex-col items-center">
       <div className="bg-white rounded-full mt-4">
         <Image src="/logo.png" alt={"logo"} width="50" height="50" />
       </div>
@@ -32,7 +32,9 @@ export default function Home() {
           </Button>
         </CardFooter>
       </Card>
-      <Credit />
+      <div className=" absolute bottom-2">
+        <Credit />
+      </div>
     </main>
   );
 }
