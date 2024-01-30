@@ -6,7 +6,7 @@ import ToolsButtons from "@/components/ToolsButtons";
 const page = () => {
   return (
     <div className="flex min-h-screen bg-gold flex-col items-center">
-      <div className="px-12 py-8">
+      <div className="p-8">
         <InvitationMedia />
       </div>
       <ConfirmForm />
