@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const InvitationMedia = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [showImage, setShowImage] = useState(false);
+  const [showImage, setShowImage] = useState(true);
 
   useEffect(() => {
     if (!videoRef.current) return;
@@ -29,7 +29,7 @@ const InvitationMedia = () => {
       ) : (
         <Image
           className="rounded-xl shadow-2xl"
-          src="/invitation_image.jpeg"
+          src="/invitation_sharon.jpeg"
           alt={"invitation image"}
           width="300"
           height="600"

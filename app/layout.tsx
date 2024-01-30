@@ -7,8 +7,8 @@ const varelaRound = Varela_Round({
 });
 
 export const metadata = {
-  title: "Daniel & Ella",
-  description: "Daniel & Ella invitation website",
+  title: "Yisrael & Sharon",
+  description: "Yisrael & Sharon invitation website",
 };
 
 export default function RootLayout({

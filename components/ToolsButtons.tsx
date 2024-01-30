@@ -8,10 +8,10 @@ const ToolsButtons = () => {
   return (
     <div className="flex justify-center items-center gap-2 mb-2">
       <AddToCalendarButton
-        name="חתונה כהן חסדיאל 🎉"
-        startDate="2023-08-22"
-        startTime="17:30"
-        endDate="2023-08-22"
+        name="חתונה ברגר חסדיאל 🎉"
+        startDate="2024-04-02"
+        startTime="18:30"
+        endDate="2024-04-02"
         endTime="23:30"
         timeZone="Asia/Jerusalem"
         location="גן ואולם אירועים כשר ברמת גן - דימול פלטינום, דימול, רחוב זאב ז'בוטינסקי 1, רמת גן, ישראל"

@@ -19,7 +19,7 @@ export default function Home() {
       </div>
       <Card dir="rtl" className="w-[350px] mt-4 shadow-2xl">
         <CardHeader className="text-center">
-          <CardTitle className="text-gold">דניאל & אלה</CardTitle>
+          <CardTitle className="text-gold">ישראל & שרון</CardTitle>
           <CardDescription>ברוך הבא לפורטל ההזמנות </CardDescription>
         </CardHeader>
         <CardContent className="text-center">מאיזה צד אתה?</CardContent>
