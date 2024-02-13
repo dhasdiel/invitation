@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const InvitationMedia = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [showImage, setShowImage] = useState(true);
+  const [showImage, setShowImage] = useState(false);
 
   useEffect(() => {
     if (!videoRef.current) return;
@@ -20,8 +20,8 @@ const InvitationMedia = () => {
           ref={videoRef}
           className="xl:h-[30rem] rounded-xl shadow-2xl"
           // src="/invitation_short_video.mp4#t=0.001
-          src="/invitation_short_video.mp4"
-          poster="/poster_video.jpeg"
+          src="/videosharon.mp4"
+          //poster="/poster_video.jpeg"
           typeof="mp4"
           controls
           playsInline
